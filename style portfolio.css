@@ -1,0 +1,262 @@
+/* style.css */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:#f4f9ff;
+  color:#1e293b;
+}
+
+/* Navbar */
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+  background:#60a5fa;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.logo{
+  color:white;
+  font-size:30px;
+  font-weight:bold;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+}
+
+nav ul li{
+  margin-left:30px;
+}
+
+nav ul li a{
+  text-decoration:none;
+  color:white;
+  font-weight:bold;
+  transition:0.3s;
+  font-size:17px;
+}
+
+nav ul li a:hover{
+  color:#fef08a;
+}
+
+/* Hero Section */
+
+.home{
+  min-height:90vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:50px 8%;
+  background:linear-gradient(to bottom, #dbeafe, #f4f9ff);
+}
+
+.home-text{
+  background:white;
+  padding:50px;
+  border-radius:25px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.1);
+  max-width:750px;
+  border:2px solid #bfdbfe;
+}
+
+.home-text h1{
+  font-size:58px;
+  margin-bottom:15px;
+  color:black;
+}
+
+.home-text span{
+  color:black;
+}
+
+.home-text h3{
+  font-size:32px;
+  margin-bottom:18px;
+  color:#2563eb;
+}
+
+.home-text p{
+  font-size:18px;
+  line-height:1.8;
+  margin-bottom:28px;
+  color:#475569;
+}
+
+.home-text button{
+  padding:14px 35px;
+  border:none;
+  border-radius:35px;
+  background:#2563eb;
+  color:white;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+  box-shadow:0 4px 12px rgba(37,99,235,0.3);
+}
+
+.home-text button:hover{
+  transform:scale(1.05);
+  background:#1d4ed8;
+}
+
+/* About */
+
+.about{
+  padding:90px 8%;
+  text-align:center;
+  background:#f0f9ff;
+}
+
+.about h2{
+  font-size:42px;
+  margin-bottom:25px;
+  color:#2563eb;
+}
+
+.about p{
+  max-width:750px;
+  margin:auto;
+  line-height:1.9;
+  font-size:18px;
+  color:#475569;
+}
+
+/* Skills */
+
+.skills{
+  padding:90px 8%;
+  text-align:center;
+  background:#e0f2fe;
+}
+
+.skills h2{
+  font-size:42px;
+  margin-bottom:35px;
+  color:#2563eb;
+}
+
+.skill-box{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.card{
+  background:white;
+  padding:40px;
+  width:230px;
+  border-radius:22px;
+  border:2px solid #93c5fd;
+  transition:0.3s;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  background:#bfdbfe;
+}
+
+.card h3{
+  font-size:30px;
+  color:#1e3a8a;
+}
+
+/* Contact */
+
+.contact{
+  padding:90px 8%;
+  text-align:center;
+  background:#dbeafe;
+}
+
+.contact h2{
+  font-size:42px;
+  margin-bottom:30px;
+  color:#2563eb;
+}
+
+.contact input,
+.contact textarea{
+  width:100%;
+  max-width:550px;
+  margin:12px 0;
+  padding:16px;
+  border:2px solid #93c5fd;
+  border-radius:14px;
+  outline:none;
+  background:white;
+  color:#1e293b;
+  font-size:16px;
+}
+
+.contact textarea{
+  height:160px;
+  resize:none;
+}
+
+.contact button{
+  margin-top:18px;
+  padding:14px 35px;
+  border:none;
+  border-radius:35px;
+  background:#2563eb;
+  color:white;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.contact button:hover{
+  background:#1d4ed8;
+  transform:scale(1.05);
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+  nav{
+    flex-direction:column;
+  }
+
+  nav ul{
+    margin-top:15px;
+  }
+
+  .home-text{
+    padding:35px;
+  }
+
+  .home-text h1{
+    font-size:40px;
+  }
+
+  .home-text h3{
+    font-size:24px;
+  }
+
+  .card{
+    width:100%;
+    max-width:300px;
+  }
+
+}
